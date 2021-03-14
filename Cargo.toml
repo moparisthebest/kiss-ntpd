@@ -1,13 +1,18 @@
 [package]
-name = "rsntp"
-version = "0.0.1"
-authors = ["Miroslav Lichvar <mlichvar0@gmail.com>"]
-description = "Multi-threaded NTP server"
-license = "GPLv2+"
+name = "kiss-ntpd"
+version = "1.0.0"
+authors = ["moparisthebest <admin@moparisthebest.com>"]
+edition = "2018"
 
-[dependencies]
-byteorder = "1.2.0"
-getopts = "0.2.14"
-net2 = "0.2.29"
-privdrop = "= 0.2.0"
-rand = "0.6"
+description = "NTP server that Keeps It Simple, Stupid"
+repository  = "https://code.moparisthebest.com/moparisthebest/kiss-ntpd"
+keywords    = ["ntp", "time", "kiss"]
+
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+
+include = [
+    "**/*.rs",
+    "Cargo.toml",
+    "*.md",
+]
