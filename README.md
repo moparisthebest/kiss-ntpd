@@ -16,16 +16,11 @@ ntp client keep that clock in sync.
 ##### Usage
 
 ```
-$ kiss-ntpd -h
-usage: kiss-ntpd [options...]
- -b, --bind                      address to bind to, default '0.0.0.0:123'
+usage: kiss-ntpd [options...] [bind_addresses...]
  -h, --help                      print this usage text
  -V, -v, --version               Show version number then quit
- -d, --debug                     Print packets sent and recieved, very verbose
 
- Environment variable support:
- You if environmental variable KISS_NTPD_BIND is set, it is used in place of --bind
- Also KISS_NTPD_DEBUG=true can be used in place of --debug
+ If no bind_addresses supplied, defaults to 0.0.0.0:123
 ```
 
 There is an example systemd unit in `systemd/kiss-ntpd.service` which runs it with minimal permissions
